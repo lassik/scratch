@@ -26,7 +26,7 @@ USA.
 
 ;;;; Class/Object System: Class Constructor
 
-(declare (usual-integrations))
+
 
 ;;; ******************************************************************
 ;;; This software is intended for use in the Edwin window system only.

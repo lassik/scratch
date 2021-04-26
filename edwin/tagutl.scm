@@ -27,7 +27,7 @@ USA.
 ;;;; Tags Facility
 ;;;  From GNU Emacs (thank you RMS)
 
-(declare (usual-integrations))
+
 
 (define-variable tags-table-pathnames
   "List of pathnames of all of the active tags tables.
@@ -97,7 +97,7 @@ See documentation of variable tags-table-pathnames."
 	    (append (list (car find-tag-pathnames-list))
 		    (if included-pathnames
 			included-pathnames
-			'())			
+			'())
 		    (cdr find-tag-pathnames-list)))))
 
 (define (first-tags-table-buffer)
@@ -114,7 +114,7 @@ See documentation of variable tags-table-pathnames."
   (if find-tag-pathnames-list
       (find-file-noselect (car find-tag-pathnames-list) #f)
       #f))
-  
+
 (define (next-tags-table-buffer)
   (if (and (pair? find-tag-pathnames-list)
 	   (pair? (cdr find-tag-pathnames-list)))
@@ -384,7 +384,7 @@ killed if they are not modified."
   (pathnames->tags-table-buffers (ref-variable tags-table-pathnames)))
 
 (define (tags-table-pathnames buffers)
-  (append-map 
+  (append-map
    (lambda (buffer)
      (or (buffer-get buffer 'TAGS-TABLE-PATHNAMES)
 	 (let ((directory

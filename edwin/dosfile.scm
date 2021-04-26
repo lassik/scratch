@@ -26,7 +26,7 @@ USA.
 
 ;;;; DOS-Syntax File Customizations
 
-(declare (usual-integrations))
+
 
 (define-variable version-control
   "Control use of version numbers for backup files.

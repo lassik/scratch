@@ -27,7 +27,7 @@ USA.
 ;;;; Command interpreter subprocess control
 ;;; Translated from "comint.el", by Olin Shivers.
 
-(declare (usual-integrations))
+
 
 (define (make-comint mode buffer program . switches)
   (let ((buffer
@@ -116,7 +116,7 @@ the appropriate regular expression.
 An input history is maintained of size comint-input-ring-size, and
 can be accessed with the commands comint-next-input [\\[comint-next-input]] and
 comint-previous-input [\\[comint-previous-input]].  Commands not keybound by
-default are send-invisible, comint-dynamic-complete, and 
+default are send-invisible, comint-dynamic-complete, and
 comint-list-dynamic-completions.
 
 If you accidentally suspend your process, use \\[comint-continue-subjob]
@@ -227,7 +227,7 @@ history list.  Default is to save anything that isn't all whitespace."
 
 (define-command send-invisible
   "Read a string without echoing, and send it to the process running
-in the current buffer.  A new-line is additionally sent.  
+in the current buffer.  A new-line is additionally sent.
 String is not saved on comint input history list.
 Security bug: your string can still be temporarily recovered with
 \\[view-lossage]."
@@ -425,7 +425,7 @@ See also \\[comint-dynamic-complete]."
 (define (comint-dynamic-complete-filename)
   "Complete the filename at point.
 This function is similar to \\[comint-replace-by-expanded-filename], except
-that it won't change parts of the filename already entered in the buffer; 
+that it won't change parts of the filename already entered in the buffer;
 it just adds completion characters to the end of the filename."
   (let ((region (comint-current-filename-region)))
     (let ((pathname

@@ -26,7 +26,7 @@ USA.
 
 ;;;; Version Control: CVS
 
-(declare (usual-integrations))
+
 
 (define vc-type:cvs
   (make-vc-type 'CVS "CVS" "\$Id\$"))

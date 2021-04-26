@@ -40,7 +40,7 @@ USA.
 ;;; string) package, which contains a copy of the runtime's old string
 ;;; implementation.  Other things, like file I/O, are handled here.
 
-(declare (usual-integrations))
+
 
 (define (call-with-file-adapter procedure)
   (lambda (pathname receiver)

@@ -27,7 +27,7 @@ USA.
 ;;;; Dummy subprocess support
 ;; package: (edwin process)
 
-(declare (usual-integrations))
+
 
 (define subprocesses-available?
   #f)

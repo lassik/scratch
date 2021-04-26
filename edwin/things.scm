@@ -26,7 +26,7 @@ USA.
 
 ;;;; Textual Entities
 
-(declare (usual-integrations))
+
 
 ;;;; Motion Primitives
 

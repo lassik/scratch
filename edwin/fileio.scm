@@ -26,7 +26,7 @@ USA.
 
 ;;;; File <-> Buffer I/O
 
-(declare (usual-integrations))
+
 
 ;;;; Encrypted files
 
@@ -173,7 +173,7 @@ of the predicates is satisfied, the file is written in the usual way."
 
 (define (insert-file mark filename)
   (%insert-file
-   mark 
+   mark
    (bind-condition-handler (list condition-type:file-error)
        (lambda (condition)
 	 condition

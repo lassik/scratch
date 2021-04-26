@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Windows: Base
 
-(declare (usual-integrations))
+
 
 ;;; The following instance variables contain permanent marks, which
 ;;; must be copied if they are passed to someone outside the buffer

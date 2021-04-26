@@ -26,7 +26,7 @@ USA.
 
 ;;;; Texinfo Mode
 
-(declare (usual-integrations))
+
 
 (define-command texinfo-mode
   "Make the current mode be Texinfo mode."

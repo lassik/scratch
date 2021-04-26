@@ -26,7 +26,7 @@ USA.
 
 ;;;; Version Control: Bazaar
 
-(declare (usual-integrations))
+
 
 (define vc-type:bzr
   (make-vc-type 'BZR "bzr" "\$Id\$"))

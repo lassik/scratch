@@ -26,7 +26,7 @@ USA.
 
 ;;;; Lisp Indentation
 
-(declare (usual-integrations))
+
 
 (define-variable lisp-indent-offset
   "If not false, the number of extra columns to indent a subform."

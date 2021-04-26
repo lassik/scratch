@@ -26,7 +26,7 @@ USA.
 
 ;;;; Abbrev Mode
 
-(declare (usual-integrations))
+
 
 ;;;; Low-level data structures
 

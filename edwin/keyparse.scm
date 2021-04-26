@@ -26,7 +26,7 @@ USA.
 
 ;;;; Keyword Syntax Parser
 
-(declare (usual-integrations))
+
 
 (define-structure (description
 		   (keyword-constructor make-keyparser-description)
@@ -174,7 +174,7 @@ See \\[complete-keyword]."
   "Perform completion on keyword preceding point."
   ()
   (lambda ()
-    (let ((end 
+    (let ((end
 	   (let ((point (current-point)))
 	     (let ((end (group-end point)))
 	       (or (re-match-forward "\\sw+" point end #f)

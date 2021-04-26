@@ -26,7 +26,7 @@ USA.
 
 ;;;; Autoload Definitions
 
-(declare (usual-integrations))
+
 
 ;;; ****************
 
@@ -139,7 +139,7 @@ Otherwise, a new buffer is created for each topic."
   boolean?)
 
 (define-variable manual-command
-  "A string containing the manual page formatting command.  
+  "A string containing the manual page formatting command.
 Section (if any) and topic strings are appended (with space separators)
 and the resulting string is provided to a shell running in a subprocess."
   false

@@ -26,7 +26,7 @@ USA.
 
 ;;;; Edwin Pathnames
 
-(declare (usual-integrations))
+
 
 (define (edwin-library-directory-pathname envvar required?)
   (let ((envval (get-environment-variable envvar)))

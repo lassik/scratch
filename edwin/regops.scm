@@ -26,7 +26,7 @@ USA.
 
 ;;;; Region/Mark Operations
 
-(declare (usual-integrations))
+
 
 (define (region-insert! mark region)
   (let ((string (region->string region))

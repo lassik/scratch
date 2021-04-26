@@ -26,7 +26,7 @@ USA.
 
 ;;;; Line/Indentation Commands
 
-(declare (usual-integrations))
+
 
 ;;;; Lines
 
@@ -379,7 +379,7 @@ With argument COLUMN, indent each line to that column."
 Inserts a newline, and then enough tabs/spaces so that
 what had been the rest of the current line is indented as much as
 it had been.  Point does not move, except to skip over indentation
-that originally followed it. 
+that originally followed it.
 With argument, makes extra blank lines in between."
   "p"
   (lambda (argument)

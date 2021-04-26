@@ -26,7 +26,7 @@ USA.
 
 ;;;; Motion within Groups
 
-(declare (usual-integrations))
+
 
 ;;;; Motion by Characters
 

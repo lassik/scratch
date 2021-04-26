@@ -26,7 +26,7 @@ USA.
 
 ;;;; Text Data Structures
 
-(declare (usual-integrations))
+
 
 ;;; This file describes the data structures used to represent and
 ;;; manipulate text within the editor.

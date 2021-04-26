@@ -26,7 +26,7 @@ USA.
 
 ;;;; Rings
 
-(declare (usual-integrations))
+
 
 (define (ring-list ring)
   (list-copy (vector-ref ring 2)))

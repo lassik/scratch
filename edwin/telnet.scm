@@ -26,15 +26,15 @@ USA.
 
 ;;;; Run Telnet in a buffer
 
-(declare (usual-integrations))
+
 
 (define-variable telnet-prompt-pattern
   "#f or Regexp to match prompts in telnet buffers."
-  #f)				    
+  #f)
 
 (define-major-mode telnet comint "Telnet"
   "Major mode for interacting with the telnet program.
-Return after the end of the process' output sends the text from the 
+Return after the end of the process' output sends the text from the
     end of process to the end of the current line.
 Return before end of process output copies rest of line to end (skipping
     the prompt) and sends it.

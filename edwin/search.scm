@@ -26,7 +26,7 @@ USA.
 
 ;;;; Search/Match Primitives
 
-(declare (usual-integrations))
+
 
 (define-syntax define-next-char-search
   (sc-macro-transformer

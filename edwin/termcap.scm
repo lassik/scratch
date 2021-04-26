@@ -26,7 +26,7 @@ USA.
 
 ;;;; Termcap(3) Interface
 
-(declare (usual-integrations))
+
 
 (define-primitives
   (termcap-initialize 1)
@@ -273,7 +273,7 @@ USA.
 	      ts-set-scroll-region-1
 	      ts-set-window
 	      (termcap-get-string "vb")	;ts-visible-bell
-	      
+
 	      ; ts-keys
 	      (append-map (lambda (string.name)
 			    (let* ((string  (car string.name))
@@ -330,5 +330,5 @@ USA.
     ("kP" . previous-page)		; previous-page key
     ("kF" . scroll-forward)		; scroll-forward / scroll-down
     ("kR" . scroll-backward)		; scroll-backward / scroll-up
-    ("kT" . set-tab) 
+    ("kT" . set-tab)
     ))

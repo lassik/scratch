@@ -26,7 +26,7 @@ USA.
 
 ;;;; Editor Frame
 
-(declare (usual-integrations))
+
 
 ;;; Editor Frame
 

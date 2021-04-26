@@ -26,7 +26,7 @@ USA.
 
 ;;;; Basic Commands
 
-(declare (usual-integrations))
+
 
 (define-command self-insert-command
   "Insert the character you type.
@@ -161,7 +161,7 @@ This command followed by an = is equivalent to a Control-=."
        (merge-bucky-bits char char-bit:control)))))
 
 (define-command meta-prefix
-  "Sets Meta-bit of following character. 
+  "Sets Meta-bit of following character.
 Turns a following A into a Meta-A.
 If the Metizer character is Altmode, it turns ^A
 into Control-Meta-A.  Otherwise, it turns ^A into plain Meta-A."

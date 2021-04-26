@@ -27,7 +27,7 @@ USA.
 ;;;; Inferior REPL Mode
 ;;; Package: (edwin inferior-repl)
 
-(declare (usual-integrations))
+
 
 (define-variable repl-enable-transcript-buffer
   "If true, record input and output from inferior REPLs in transcript buffer.

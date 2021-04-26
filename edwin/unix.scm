@@ -26,7 +26,7 @@ USA.
 
 ;;;; Unix Customizations for Edwin
 
-(declare (usual-integrations))
+
 
 (define-variable backup-by-copying-when-symlink
   "#T means use copying to create backups for a symbolic name.

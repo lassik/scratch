@@ -26,7 +26,7 @@ USA.
 
 ;;;; Rectangle Commands
 
-(declare (usual-integrations))
+
 
 (define rectangle-ring (list 'RECTANGLE))
 
@@ -109,7 +109,7 @@ The text previously in the region is overwritten by the blanks."
 		       (sl (string-length next$))
 		       (final$ (if (< sl columns) (string-append next$
 								 (Make-string (- columns sl) #\space))
-				   next$)) 
+				   next$))
 		       (end-of-line (if line-mark (mark-left-inserting line-mark)
 					 (let () (insert-newline before-line-mark)
 					      before-line-mark)))

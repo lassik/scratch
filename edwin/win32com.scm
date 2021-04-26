@@ -27,7 +27,7 @@ USA.
 ;;;; Win32 Commands
 ;;; package (edwin win-commands)
 
-(declare (usual-integrations))
+
 
 (define-command set-icon
   "Set the current window's icon to ICON.

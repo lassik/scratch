@@ -26,7 +26,7 @@ USA.
 
 ;;;; Dynamic Abbrev
 
-(declare (usual-integrations))
+
 
 (define-variable dabbrevs-backward-only
   "If true, dabbrevs-expand only looks backwards."
@@ -205,7 +205,7 @@ with the next possible expansion not yet tried."
 		   (ref-variable last-dabbrevs-direction))
 	(do-from-scratch))))
 
-;; Search function used by dabbrevs library.  
+;; Search function used by dabbrevs library.
 ;; pattern is string to find as prefix of word.
 ;; reverse? is true for reverse search, false for forward.
 ;; Variable abbrevs-limit controls the maximum search region size.

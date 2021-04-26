@@ -26,7 +26,7 @@ USA.
 
 ;;;; Debian changelog mode
 
-(declare (usual-integrations))
+
 
 (define-command debian-changelog-mode
   "Enter Debian changelog mode."
@@ -146,7 +146,7 @@ Key bindings:
 			     (map (lambda (s) (cons s s))
 				  '("stable"
 				    "frozen"
-				    "unstable" 
+				    "unstable"
 				    "stable frozen unstable"
 				    "stable unstable frozen"
 				    "unstable stable frozen"

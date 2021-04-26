@@ -26,7 +26,7 @@ USA.
 
 ;;;; Scheme News Reader
 
-(declare (usual-integrations))
+
 
 (load-option 'ORDERED-VECTOR)
 

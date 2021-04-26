@@ -26,7 +26,7 @@ USA.
 
 ;;;; Modeline Window
 
-(declare (usual-integrations))
+
 
 (define-class modeline-window vanilla-window
   (shows-buffer-modified?))

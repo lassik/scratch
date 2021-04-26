@@ -29,7 +29,7 @@
 ;;;
 ;;; Author: Brian A. LaMacchia -- bal@zurich.ai.mit.edu
 
-(declare (usual-integrations))
+
 
 (define-variable techinfo-web-buffer
   "Buffer which contains a copy of the TechInfo web file."

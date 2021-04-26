@@ -26,7 +26,7 @@ USA.
 
 ;;;; Display Imaging
 
-(declare (usual-integrations))
+
 
 (define (group-columns group start end column tab-width char-image-strings)
   (let ((text       (group-text group))
@@ -412,4 +412,3 @@ USA.
 		  (begin
 		    (string-set! image image-index (string-ref picture i))
 		    (loop (fix:+ i 1) (fix:+ image-index 1))))))))))
-

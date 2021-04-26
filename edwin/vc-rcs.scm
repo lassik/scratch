@@ -26,7 +26,7 @@ USA.
 
 ;;;; Version Control: RCS
 
-(declare (usual-integrations))
+
 
 (define vc-type:rcs
   ;; Splitting up string constant prevents RCS from expanding this

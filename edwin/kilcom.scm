@@ -26,7 +26,7 @@ USA.
 
 ;;;; Kill Commands
 
-(declare (usual-integrations))
+
 
 ;;;; Deletion
 
@@ -71,7 +71,7 @@ Negative args kill characters backward."
 (define-command kill-line
   "Kill to end of line, or kill an end of line.
 At the end of a line (only blanks following) kill through the newline.
-Otherwise, kill the rest of the line but not the newline.  
+Otherwise, kill the rest of the line but not the newline.
 With argument (positive or negative), kill specified number of lines.
 An argument of zero means kill to beginning of line, nothing if at beginning.
 Killed text is pushed onto the kill ring for retrieval."

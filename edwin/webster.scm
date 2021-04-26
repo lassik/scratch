@@ -29,7 +29,7 @@ USA.
 ;;; Translated from Noah Friedman's Emacs implementation:
 ;;; webster.el,v 1.2 1995/01/04 00:41:51
 
-(declare (usual-integrations))
+
 
 (define (webster-send request word)
   (guarantee-webster-server-port (selected-buffer))

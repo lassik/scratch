@@ -26,7 +26,7 @@ USA.
 
 ;;;; Display Manual Pages
 
-(declare (usual-integrations))
+
 
 (define-command manual-entry
   "Display the Unix manual entry for TOPIC.

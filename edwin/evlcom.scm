@@ -27,7 +27,7 @@ USA.
 ;;;; Evaluation Commands
 ;;; Package: (edwin)
 
-(declare (usual-integrations))
+
 
 ;;;; Variables
 

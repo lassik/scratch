@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Set Abstraction
 
-(declare (usual-integrations))
+
 
 (define-structure (bufferset (constructor %make-bufferset))
   buffer-list

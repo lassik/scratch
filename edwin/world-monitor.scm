@@ -26,7 +26,7 @@ USA.
 
 ;;;; Create a *World* buffer containing the world report.
 
-(declare (usual-integrations))
+
 
 (define-command monitor-world
   "Find or create a buffer named *World*, insert a world report into

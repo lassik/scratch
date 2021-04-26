@@ -36,7 +36,7 @@ USA.
 ;;; version (prefixed with `%') that assumes all arguments have been
 ;;; checked.  This avoids repeated argument checks.
 
-(declare (usual-integrations))
+
 
 ;;;; Primitives
 

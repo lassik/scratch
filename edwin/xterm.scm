@@ -27,7 +27,7 @@ USA.
 ;;;; X Terminal
 ;;; Package: (edwin screen x-screen)
 
-(declare (usual-integrations))
+
 
 ;;;; An X display type that autoloads the x11-screen plugin.
 

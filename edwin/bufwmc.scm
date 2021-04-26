@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Windows: Mark <-> Coordinate Maps
 
-(declare (usual-integrations))
+
 
 (define-integrable (buffer-window/mark->x window mark)
   (buffer-window/index->x window (mark-index mark)))

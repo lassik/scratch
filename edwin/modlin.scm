@@ -27,7 +27,7 @@ USA.
 ;;;; Modeline Format
 ;;; package: (edwin mode-line-format)
 
-(declare (usual-integrations))
+
 
 (define-variable-per-buffer mode-line-format
   "Template for displaying mode line for current buffer.

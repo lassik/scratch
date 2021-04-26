@@ -26,7 +26,7 @@ USA.
 
 ;;;; Keyboard Input
 
-(declare (usual-integrations))
+
 
 #|
 

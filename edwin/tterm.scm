@@ -26,7 +26,7 @@ USA.
 
 ;;;; Termcap(3) Screen Implementation
 
-(declare (usual-integrations))
+
 
 (define (make-console-screen)
   (let ((description (console-termcap-description)))

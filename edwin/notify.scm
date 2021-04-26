@@ -26,7 +26,7 @@ USA.
 
 ;;;; Mode-line notifications (e.g. presence of mail, load average)
 
-(declare (usual-integrations))
+
 
 (define-variable notify-show-time
   "If true, the notifier displays the current time."
@@ -73,7 +73,7 @@ USA.
       (let ((result
 	     (if (re-search-forward
 		  ".*load average:[ ]*\\([0-9.]*\\),"
-		  start 
+		  start
 		  (buffer-end temporary-buffer))
 		 (extract-string (re-match-start 1)
 				 (re-match-end 1))

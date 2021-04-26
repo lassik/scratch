@@ -26,7 +26,7 @@ USA.
 
 ;;;; Window Commands
 
-(declare (usual-integrations))
+
 
 (define-variable window-min-width
   "Delete any window less than this wide.

@@ -27,7 +27,7 @@ USA.
 ;;;; Search Commands
 ;;; package: (edwin)
 
-(declare (usual-integrations))
+
 
 ;;;; Variables
 
@@ -195,7 +195,7 @@ Set point to the end of the occurrence found."
     ((ref-command re-search-forward)
      toggle-case-fold?
      (string->wordified-regexp string (ref-variable syntax-table)))))
-  
+
 (define-command word-search-backward
   "Search backward from point for STRING, ignoring differences in punctuation.
 Set point to the beginning of the occurrence found."

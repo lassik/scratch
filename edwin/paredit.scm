@@ -7,7 +7,7 @@ Domain.  All warranties are disclaimed.
 
 ;;;; Paredit: Parenthesis-Editing Minor Mode (based on paredit.el)
 
-(declare (usual-integrations))
+
 
 (define-command paredit-mode
   "Toggle pseudo-structural editing of Lisp code.
@@ -585,7 +585,7 @@ With a numerical prefix argument N, kill N S-expressions backward in
     (if argument (paredit-kill-surrounding-sexps-for-splice argument))
     (let* ((before-open (backward-up-list (current-point) 1 'ERROR))
            (before-close
-            (mark-1+ (forward-sexp before-open 1 'ERROR)))) 
+            (mark-1+ (forward-sexp before-open 1 'ERROR))))
       (delete-right-char before-close)
       (delete-right-char before-open)
       (with-current-point before-open

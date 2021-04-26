@@ -26,7 +26,7 @@ USA.
 
 ;;;; RMAIL Summary Mode
 
-(declare (usual-integrations))
+
 
 (define-variable-per-buffer rmail-buffer
   "Corresponding RMAIL buffer for a summary buffer.

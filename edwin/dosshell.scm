@@ -27,7 +27,7 @@ USA.
 ;;;; Pseudo Shell subprocess in a buffer
 ;;; Inspired by "cmushell.el", by Olin Shivers.
 
-(declare (usual-integrations))
+
 
 (load-option 'DOSPROCESS)
 
@@ -123,7 +123,7 @@ and tracking directories."
 (define (insert-pseudo-shell-prompt! #!optional point)
   ;; This corresponds to the $p$g prompt pattern.
   (insert-string (string-append
-		  (pseudo-directory-namestring 
+		  (pseudo-directory-namestring
 		   (buffer-default-directory (current-buffer)))
 		  ">")
 		 (if (default-object? point)

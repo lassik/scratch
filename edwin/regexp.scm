@@ -26,7 +26,7 @@ USA.
 
 ;;;; Regular Expressions
 
-(declare (usual-integrations))
+
 
 (define hash-of-false (hash-object #f))
 (define match-group hash-of-false)

@@ -27,7 +27,7 @@ USA.
 ;;;; Shell subprocess in a buffer
 ;;; Translated from "cmushell.el", by Olin Shivers.
 
-(declare (usual-integrations))
+
 
 (define-variable shell-prompt-pattern
   "Regexp to match prompts in the inferior shell."
@@ -41,7 +41,7 @@ USA.
 
 (define-major-mode shell comint "Shell"
   "Major mode for interacting with an inferior shell.
-Return after the end of the process' output sends the text from the 
+Return after the end of the process' output sends the text from the
     end of process to the end of the current line.
 Return before end of process output copies rest of line to end (skipping
     the prompt) and sends it.

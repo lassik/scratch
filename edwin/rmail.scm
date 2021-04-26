@@ -26,7 +26,7 @@ USA.
 
 ;;;; RMAIL Mail Reader
 
-(declare (usual-integrations))
+
 
 (define rmail-spool-directory
   #f)
@@ -1481,7 +1481,7 @@ buffer visiting that file."
 						rmail-summary-vector
 						rmail-summary-buffer)))
 					  (if rmail-summary-vector
-					      (vector-set! 
+					      (vector-set!
 					       rmail-summary-vector
 					       (- (msg-memo/number memo) 1)
 					       false)))))

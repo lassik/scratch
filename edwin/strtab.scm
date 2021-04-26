@@ -26,7 +26,7 @@ USA.
 
 ;;;; String Tables
 
-(declare (usual-integrations))
+
 
 (define-structure (string-table (constructor %make-string-table))
   vector

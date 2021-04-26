@@ -26,7 +26,7 @@ USA.
 
 ;;;; Register Commands
 
-(declare (usual-integrations))
+
 
 (define-command point-to-register
   "Store current location of point in a register."

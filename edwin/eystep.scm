@@ -26,7 +26,7 @@ USA.
 
 ;;;; Edwin Interface to YStep
 
-(declare (usual-integrations))
+
 
 (define-command step-expression
   "Single-step an expression."
@@ -128,7 +128,7 @@ c	contract the step under the cursor")
 (define-command stepper-contract
   "Contract the current step."
   ()
-  (lambda () 
+  (lambda ()
     (let ((state (current-stepper-state))
 	  (node (current-node)))
       (ynode-contract! node)

@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Abstraction
 
-(declare (usual-integrations))
+
 
 (define-structure (buffer
 		   (constructor %make-buffer (%name %default-directory))

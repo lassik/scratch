@@ -26,7 +26,7 @@ USA.
 
 ;;;; Editor Macros
 
-(declare (usual-integrations))
+
 
 ;; Upwards compatibility:
 (define edwin-syntax-table (->environment '(EDWIN)))

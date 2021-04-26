@@ -26,7 +26,7 @@ USA.
 
 ;;;; Text Commands
 
-(declare (usual-integrations))
+
 
 (define-major-mode text fundamental "Text"
   "Major mode for editing english text."

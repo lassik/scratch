@@ -27,7 +27,7 @@ USA.
 ;;;; Text Properties
 ;;;  An improved version of a mechanism from GNU Emacs 19
 
-(declare (usual-integrations))
+
 
 (define (add-text-property group start end key datum #!optional no-overwrite?)
   (validate-region-arguments group start end 'ADD-TEXT-PROPERTY)

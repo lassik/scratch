@@ -26,7 +26,7 @@ USA.
 
 ;;;; Win32 Customizations for Edwin
 
-(declare (usual-integrations))
+
 
 (define (os/set-file-modes-writeable! pathname)
   (set-file-modes! pathname

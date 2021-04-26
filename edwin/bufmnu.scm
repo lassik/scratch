@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Menu
 
-(declare (usual-integrations))
+
 
 (define-variable buffer-menu-kill-on-quit
   "If not false, kill the *Buffer-List* buffer when leaving it."

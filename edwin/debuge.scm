@@ -26,7 +26,7 @@ USA.
 
 ;;;; Debugging Stuff
 
-(declare (usual-integrations))
+
 
 (define (debug-save-files)
   (for-each debug-save-buffer

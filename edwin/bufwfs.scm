@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Windows: Fill and Scroll
 
-(declare (usual-integrations))
+
 
 (define (fill-top window start)
   (let ((group (%window-group window))
@@ -212,7 +212,7 @@ USA.
 							     end-index
 							     'HIGHLIGHTED)
 			      end-index))
-			 ;; If line is clipped off top of window, draw it 
+			 ;; If line is clipped off top of window, draw it
 			 ;; anyway so that index and column calculations
 			 ;; get done. Use first visible line for image
 			 ;; output so as to avoid consing a dummy image

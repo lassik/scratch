@@ -26,7 +26,7 @@ USA.
 
 ;;;; Version Control: Subversion
 
-(declare (usual-integrations))
+
 
 (define vc-type:svn
   (make-vc-type 'SVN "SVN" "\$Id\$"))

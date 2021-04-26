@@ -26,7 +26,7 @@ USA.
 
 ;;;; Window System
 
-(declare (usual-integrations))
+
 
 ;;;  Based on WINDOW-WIN, designed by RMS.
 ;;;  See WINOPS.TXT for more information.

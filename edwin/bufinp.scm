@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Input Ports
 
-(declare (usual-integrations))
+
 
 (define (with-input-from-mark mark thunk #!optional receiver)
   (let ((port (make-buffer-input-port mark (group-end mark))))

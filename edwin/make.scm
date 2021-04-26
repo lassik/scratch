@@ -26,7 +26,7 @@ USA.
 
 ;;;; Edwin: System Construction
 
-(declare (usual-integrations))
+
 
 (load-option 'xml)
 (with-loader-base-uri (system-library-uri "edwin/")

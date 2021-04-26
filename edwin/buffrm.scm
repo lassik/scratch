@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Frames
 
-(declare (usual-integrations))
+
 
 (define-class buffer-frame combination-leaf-window
   (
@@ -332,7 +332,7 @@ Automatically becomes local when set in any fashion."
 	       (and (string? (vector-ref object i))
 		    (<= 1 (string-length (vector-ref object i)) 255)
 		    (loop (+ i 1))))))))
-	 
+
 (let ((setup-truncate-lines!
        (lambda (buffer variable)
 	 variable			;ignore

@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Commands
 
-(declare (usual-integrations))
+
 
 (define (prompt-for-select-buffer prompt)
   (lambda ()

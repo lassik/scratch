@@ -26,7 +26,7 @@ USA.
 
 ;;;; Replacement Commands
 
-(declare (usual-integrations))
+
 
 (define-variable case-replace
   "If true, means replacement commands should preserve case."

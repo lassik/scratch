@@ -26,7 +26,7 @@ USA.
 
 ;;;; Buffer Windows: Image Update
 
-(declare (usual-integrations))
+
 
 ;;;; Insert/Delete
 

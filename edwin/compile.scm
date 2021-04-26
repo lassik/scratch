@@ -26,7 +26,7 @@ USA.
 
 ;;;; Compilation Subprocess
 
-(declare (usual-integrations))
+
 
 (define-variable compile-command
   "Initial contents of \\[compile] prompt."

@@ -26,7 +26,7 @@ USA.
 
 ;;;; Text Parsing
 
-(declare (usual-integrations))
+
 
 ;;;; Pages
 

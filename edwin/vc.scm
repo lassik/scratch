@@ -29,7 +29,7 @@ USA.
 ;;; Adapted from "vc.el" in Emacs 19.22.
 ;;; Updated March 2000 from "vc.el" in Emacs 20.6.
 
-(declare (usual-integrations))
+
 
 ;;;; Editor Variables
 
@@ -113,7 +113,7 @@ and that its contents match what the master file says."
   "Indicates what to do if you visit a symbolic link to a file
 that is under version control.  Editing such a file through the
 link bypasses the version control system, which is dangerous and
-probably not what you want.  
+probably not what you want.
   If this variable is #t, VC follows the link and visits the real file,
 telling you about it in the echo area.  If it is `ask', VC asks for
 confirmation whether it should follow the link.  If #f, the link is
@@ -748,7 +748,7 @@ merge in the changes into your working copy."
 
 (define-command vc-diff
   "Display diffs between file versions.
-Normally this compares the current file and buffer with the most recent 
+Normally this compares the current file and buffer with the most recent
 checked in version of that file.  This uses no arguments.
 With a prefix argument, it reads the file name to use
 and two version designators specifying which versions to compare."
@@ -988,12 +988,12 @@ Normally shows only locked files; prefix arg says to show all files."
 
 (define-major-mode vc-dired dired "VC-Dired"
   "The major mode used in VC directory buffers.  It works like Dired,
-but lists only files under version control, with the current VC state of 
-each file being indicated in the place of the file's link count, owner, 
-group and size.  Subdirectories are also listed, and you may insert them 
+but lists only files under version control, with the current VC state of
+each file being indicated in the place of the file's link count, owner,
+group and size.  Subdirectories are also listed, and you may insert them
 into the buffer as desired, as in Dired.
   All Dired commands operate normally, with the exception of `v', which
-is redefined as the version control prefix, so that you can type 
+is redefined as the version control prefix, so that you can type
 `vl', `v=' etc. to invoke `vc-print-log', `vc-diff', and the like on
 the file named in the current Dired buffer line.  `vv' invokes
 `vc-next-action' on this file, or on all files currently marked.
@@ -1499,7 +1499,7 @@ the value of vc-log-mode-hook."
   ;; Comparison runs till the end of the string is found, or a
   ;; non-numeric component shows up (5.6.7 is earlier than "5.6.7 beta",
   ;; which is probably not what you want in some cases).
-  ;;   This code is suitable for existing RCS release numbers.  
+  ;;   This code is suitable for existing RCS release numbers.
   ;; CVS releases are handled reasonably, too (1.3 < 1.4* < 1.5).
   (let ((t1 (burst-string r1 #\space #t))
 	(t2 (burst-string r2 #\space #t)))

@@ -27,7 +27,7 @@ USA.
 ;;;; User Prompting
 ;;; Package: (edwin prompt)
 
-(declare (usual-integrations))
+
 
 (define typein-edit-abort-flag "Abort")
 (define typein-edit-continuation)

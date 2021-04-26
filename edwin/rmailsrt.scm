@@ -26,7 +26,7 @@ USA.
 
 ;;;; RMAIL Sorting Utilities
 
-(declare (usual-integrations))
+
 
 ;; GNUS compatible key bindings.
 (define-key 'rmail (list #\C-c #\C-s #\C-d) 'rmail-sort-by-date)
@@ -35,12 +35,12 @@ USA.
 (define-key 'rmail (list #\C-c #\C-s #\C-r) 'rmail-sort-by-recipient)
 (define-key 'rmail (list #\C-c #\C-s #\C-l) 'rmail-sort-by-size-lines)
 
-(define-command rmail-sort-by-date 
+(define-command rmail-sort-by-date
   "Sort messages of current Rmail file by date.
 If prefix argument REVERSE is non-nil, sort them in reverse order."
   "P"
   (lambda (reverse)
-    (rmail-sort-messages 
+    (rmail-sort-messages
      reverse
      (lambda (memo)
        (fetch-first-field "date" (msg-memo/start memo) (msg-memo/end memo)))
@@ -48,17 +48,17 @@ If prefix argument REVERSE is non-nil, sort them in reverse order."
        (string<? (rmail-sortable-date-string x)
 		 (rmail-sortable-date-string y))))))
 
-(define-command rmail-sort-by-subject 
+(define-command rmail-sort-by-subject
   "Sort messages of current Rmail file by subject.
 If prefix argument REVERSE is non-nil, sort them in reverse order."
   "P"
   (lambda (reverse)
-    (rmail-sort-messages 
+    (rmail-sort-messages
      reverse
      (let ((re-pattern (re-compile-pattern "^\\(re:[ \t]+\\)*" true)))
        (lambda (memo)
 	 (let ((key
-		(or (fetch-first-field "subject" 
+		(or (fetch-first-field "subject"
 				       (msg-memo/start memo)
 				       (msg-memo/end memo))
 		    "")))
@@ -69,12 +69,12 @@ If prefix argument REVERSE is non-nil, sort them in reverse order."
 		 key)))))
      string<?)))
 
-(define-command rmail-sort-by-author 
+(define-command rmail-sort-by-author
   "Sort messages of current Rmail file by author.
 If prefix argument REVERSE is non-nil, sort them in reverse order."
   "P"
   (lambda (reverse)
-    (rmail-sort-messages 
+    (rmail-sort-messages
      reverse
      (lambda (memo)
        (let ((start (msg-memo/start memo))
@@ -84,12 +84,12 @@ If prefix argument REVERSE is non-nil, sort them in reverse order."
 	      (fetch-first-field "sender" start end)))))
      string<?)))
 
-(define-command rmail-sort-by-recipient 
+(define-command rmail-sort-by-recipient
   "Sort messages of current Rmail file by recipient.
 If prefix argument REVERSE is non-nil, sort them in reverse order."
   "P"
   (lambda (reverse)
-    (rmail-sort-messages 
+    (rmail-sort-messages
      reverse
      (lambda (memo)
        (let ((start (msg-memo/start memo))
@@ -99,7 +99,7 @@ If prefix argument REVERSE is non-nil, sort them in reverse order."
 	      (fetch-first-field "apparently-to" start end)))))
      string<?)))
 
-(define-command rmail-sort-by-size-lines 
+(define-command rmail-sort-by-size-lines
   "Sort messages of current Rmail file by message size.
 If prefix argument REVERSE is non-nil, sort them in reverse order."
   "P"
@@ -122,7 +122,7 @@ If prefix argument REVERSE is non-nil, sort them in reverse order."
 	(let ((next (msg-memo/next the-memo)))
 	  (if (= 9 (modulo n 10))
 	      (message "Finding sort keys..." (1+ n)))
-	  (vector-set! 
+	  (vector-set!
 	   sort-vect n
 	   (list (keyfunc the-memo)
 		 (extract-string
@@ -256,7 +256,7 @@ If prefix argument REVERSE is non-nil, sort them in reverse order."
 	(if r
 	    (begin
 	      (set! address
-		    (mail-string-delete address 
+		    (mail-string-delete address
 					(re-match-start-index 0 r)
 					(re-match-end-index 0 r)))
 	      (loop)))))

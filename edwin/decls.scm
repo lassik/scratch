@@ -26,7 +26,7 @@ USA.
 
 ;;;; Edwin: Syntaxing Declarations
 
-(declare (usual-integrations))
+
 
 (let* ((sf-names (lambda (file) (sf/pathname-defaulting file #f #f)))
        (scm-file (lambda (file) (receive (scm bin spec) (sf-names file) scm)))

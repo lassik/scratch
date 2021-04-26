@@ -28,7 +28,7 @@ USA.
 
 ;;; This program implements I/O for a text-format password database.
 
-(declare (usual-integrations))
+
 
 (define (read-pw-forms port)
   (parse/neutral port '()))

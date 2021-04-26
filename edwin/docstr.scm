@@ -26,7 +26,7 @@ USA.
 
 ;;;; Documentation Strings
 
-(declare (usual-integrations))
+
 
 (define *external-doc-strings?* #t)
 (define *external-doc-strings-file* #f)

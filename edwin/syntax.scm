@@ -26,7 +26,7 @@ USA.
 
 ;;;; Syntax Tables
 
-(declare (usual-integrations))
+
 
 (define modify-syntax-entry! set-char-syntax!)
 
@@ -291,11 +291,11 @@ a comment ending."
            state
            (make-mark group (parse-state-start-of-sexp state))))
       (if (parse-state-last-sexp state)
-	  (set-parse-state-last-sexp! 
-	   state 
+	  (set-parse-state-last-sexp!
+	   state
 	   (make-mark group (parse-state-last-sexp state))))
       (if (parse-state-containing-sexp state)
-	  (set-parse-state-containing-sexp! 
+	  (set-parse-state-containing-sexp!
 	   state
 	   (make-mark group (parse-state-containing-sexp state))))
       (set-parse-state-location! state

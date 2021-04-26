@@ -26,7 +26,7 @@ USA.
 
 ;;;; Mail Sending
 
-(declare (usual-integrations))
+
 
 (define-variable user-mail-address
   "Full mailing address of this user.

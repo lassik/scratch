@@ -26,7 +26,7 @@ USA.
 
 ;;;; Version Control: git
 
-(declare (usual-integrations))
+
 
 (define vc-type:git
   (make-vc-type 'GIT "git" "\$Id\$"))

@@ -26,7 +26,7 @@ USA.
 
 ;;;; Major Mode for Verilog Programs
 
-(declare (usual-integrations))
+
 
 (define-command verilog-mode
   "Enter Verilog mode."

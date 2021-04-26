@@ -27,7 +27,7 @@ USA.
 ;;;; Directory Editor (Unix Customizations)
 ;;; package: (edwin dired)
 
-(declare (usual-integrations))
+
 
 (define (dired-change-inode program)
   (lambda (attribute argument)

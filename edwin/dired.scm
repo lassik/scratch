@@ -27,7 +27,7 @@ USA.
 ;;;; Directory Editor
 ;; package: (edwin dired)
 
-(declare (usual-integrations))
+
 
 (define-variable dired-trivial-filenames
   "Regexp of files to skip when finding first file of a directory.
@@ -432,7 +432,7 @@ negative numeric arg overrides kept-old-versions with minus the arg."
 
 (define-command dired-unmark-all-files
   "Remove a specific mark (or any mark) from every file.
-After this command, type the mark character to remove, 
+After this command, type the mark character to remove,
 or type RET to remove all marks.
 With prefix arg, query for each marked file.
 Type \\[help-command] at that time for help."

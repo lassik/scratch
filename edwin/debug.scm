@@ -27,7 +27,7 @@ USA.
 ;;;; Browser-style Debug and Where
 ;;; Package: (edwin debugger)
 
-(declare (usual-integrations))
+
 
 ;;;; Text prop setup stuff
 

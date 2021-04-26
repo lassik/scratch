@@ -26,7 +26,7 @@ USA.
 
 ;;;; Commands and Variables
 
-(declare (usual-integrations))
+
 
 (define-structure (command
 		   (constructor %make-command ())

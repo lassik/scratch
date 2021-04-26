@@ -26,7 +26,7 @@ USA.
 
 ;;;; Screen Commands
 
-(declare (usual-integrations))
+
 
 (define-command delete-frame
   "Delete the frame that point is in."

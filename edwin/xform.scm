@@ -26,7 +26,7 @@ USA.
 
 ;;;; Instance Variable Transformation
 
-(declare (usual-integrations))
+
 
 (define (transform-instance-variables transforms name free expression)
   (fluid-let ((name-of-self name))

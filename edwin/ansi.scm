@@ -26,7 +26,7 @@ USA.
 
 ;;;; Hard-coded ANSI terminal type for lack of termcap on DOS/NT
 
-(declare (usual-integrations))
+
 
 (define (make-ansi-terminal-description columns lines)
   (define (get-numstring base-name)

@@ -26,7 +26,7 @@ USA.
 
 ;;;; Editor Utilities
 
-(declare (usual-integrations))
+
 
 ;; Allow gc and after-gc hooks.
 

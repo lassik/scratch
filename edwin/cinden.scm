@@ -26,7 +26,7 @@ USA.
 
 ;;;; C Indentation (from GNU Emacs)
 
-(declare (usual-integrations))
+
 
 (define-variable c-indent-level
   "Indentation of C statements with respect to containing block."
